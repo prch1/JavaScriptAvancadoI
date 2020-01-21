@@ -65,6 +65,7 @@
 
     var n1 = new Negociacao(new Date(), 5, 700);
 
+  // Object.freeze(n1);
     n1._quantidade = 6000; //caso eu queira alterar o valor tenho que acessar essa propriedade privada
 
     console.log(n1.quantidade);
