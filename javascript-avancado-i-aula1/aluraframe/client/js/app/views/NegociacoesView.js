@@ -1,10 +1,5 @@
-class NegociacoesView {
-    
-    constructor(elemento) {
-        
-        this._elemento = elemento;
-    }
-    
+class NegociacoesView extends View {
+  
     _template(model) {
         
         return `
@@ -42,19 +37,4 @@ class NegociacoesView {
         `;
     }
     
-    update(model) {
-        
-        this._elemento.innerHTML = this._template(model);
-    }
 }
-/*
-<td> ${
-    (function()
-    {
-        let total = 0;
-        model.negociacoes.forEach(n => total += n.volume);
-        return total;
-    })()
-}
-</td>
-*/
